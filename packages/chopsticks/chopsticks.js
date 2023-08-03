@@ -1,2 +1,2 @@
-#!/usr/bin/env node --experimental-modules
+#!/usr/bin/env node
 import './lib/cli.js'
