@@ -1,4 +1,5 @@
 import createLogger from 'pino'
+// const createLogger = pino()
 
 export const defaultLogger = createLogger({
   level: process.env.LOG_LEVEL || 'info',

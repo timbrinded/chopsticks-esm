@@ -1,5 +1,5 @@
 import { HexString } from '@polkadot/util/types'
-import _ from 'lodash'
+import _ from 'lodash-es'
 
 // 0x + 32 module + 32 method
 export const PREFIX_LENGTH = 66

@@ -2,8 +2,12 @@ import { Index } from '@polkadot/types/interfaces'
 import { hexToU8a } from '@polkadot/util'
 import { readFileSync } from 'node:fs'
 import path from 'node:path'
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
 
-import { Handlers } from '../shared'
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+import { Handlers } from '../shared.js'
 
 const handlers: Handlers = {
   system_localPeerId: async () => '5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY',

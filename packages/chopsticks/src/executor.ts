@@ -1,8 +1,7 @@
 import { HexString } from '@polkadot/util/types'
 import { hexToString, hexToU8a } from '@polkadot/util'
 import { randomAsHex } from '@polkadot/util-crypto'
-
-import { Block } from './blockchain/block'
+import { Block } from './blockchain/block.js'
 import {
   JsCallback,
   calculate_state_root,
@@ -11,10 +10,10 @@ import {
   get_runtime_version,
   run_task,
 } from '@acala-network/chopsticks-executor'
-import { PREFIX_LENGTH } from './utils/key-cache'
+import { PREFIX_LENGTH } from './utils/key-cache.js'
 import { Registry } from '@polkadot/types-codec/types'
-import { defaultLogger, truncate } from './logger'
-import _ from 'lodash'
+import { defaultLogger, truncate } from './logger.js'
+import _ from 'lodash-es'
 
 export type RuntimeVersion = {
   specName: string

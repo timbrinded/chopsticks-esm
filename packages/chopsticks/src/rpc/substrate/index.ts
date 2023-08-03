@@ -1,10 +1,10 @@
-import author from './author'
-import chain from './chain'
-import payment from './payment'
-import state from './state'
-import system from './system'
+import author from './author.js'
+import chain from './chain.js'
+import payment from './payment.js'
+import state from './state.js'
+import system from './system.js'
 
-import { Handlers } from '../shared'
+import { Handlers } from '../shared.js'
 
 const handlers: Handlers = {
   ...author,

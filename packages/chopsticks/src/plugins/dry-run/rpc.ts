@@ -1,10 +1,10 @@
 import { HexString } from '@polkadot/util/types'
-import _ from 'lodash'
+import _ from 'lodash-es'
 import z from 'zod'
 
-import { Handler, ResponseError } from '../../rpc/shared'
-import { decodeStorageDiff } from '../../utils/decoder'
-import { generateHtmlDiff } from '../../utils/generate-html-diff'
+import { Handler, ResponseError } from '../../rpc/shared.js'
+import { decodeStorageDiff } from '../../utils/decoder.js'
+import { generateHtmlDiff } from '../../utils/generate-html-diff.js'
 
 const zHex = z.custom<HexString>((val: any) => /^0x\w+$/.test(val))
 const zHash = z.string().length(66).and(zHex)

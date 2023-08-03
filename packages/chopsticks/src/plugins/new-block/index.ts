@@ -1,5 +1,5 @@
-import { Handler, ResponseError } from '../../rpc/shared'
-import { defaultLogger } from '../../logger'
+import { Handler, ResponseError } from '../../rpc/shared.js'
+import { defaultLogger } from '../../logger.js'
 
 export const rpc: Handler = async (context, [param]) => {
   const { count, to, hrmp, ump, dmp, transactions } = param || {}

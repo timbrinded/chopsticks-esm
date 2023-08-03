@@ -1,4 +1,4 @@
-import { Handlers, ResponseError } from '../shared'
+import { Handlers, ResponseError } from '../shared.js'
 
 const processHeader = (header: any) => {
   const res = header.toJSON() as any

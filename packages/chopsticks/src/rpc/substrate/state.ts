@@ -1,6 +1,6 @@
-import { Block } from '../../blockchain/block'
-import { Handlers, ResponseError } from '../shared'
-import { defaultLogger } from '../../logger'
+import { Block } from '../../blockchain/block.js'
+import { Handlers, ResponseError } from '../shared.js'
+import { defaultLogger } from '../../logger.js'
 
 const logger = defaultLogger.child({ name: 'rpc-state' })
 

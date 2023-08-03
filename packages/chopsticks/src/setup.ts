@@ -6,10 +6,10 @@ import { HexString } from '@polkadot/util/types'
 import { ProviderInterface } from '@polkadot/rpc-provider/types'
 import { WsProvider } from '@polkadot/api'
 
-import { Api } from './api'
-import { Blockchain } from './blockchain'
-import { Config } from './schema'
-import { GenesisProvider } from './genesis-provider'
+import { Api } from './api.js'
+import { Blockchain } from './blockchain/index.js'
+import { Config } from './schema/index.js'
+import { GenesisProvider } from './genesis-provider.js'
 import {
   InherentProviders,
   ParaInherentEnter,
@@ -17,11 +17,11 @@ import {
   SetNimbusAuthorInherent,
   SetTimestamp,
   SetValidationData,
-} from './blockchain/inherent'
-import { defaultLogger } from './logger'
-import { importStorage, overrideWasm } from './utils/import-storage'
-import { openDb } from './db'
-import { timeTravel } from './utils/time-travel'
+} from './blockchain/inherent/index.js'
+import { defaultLogger } from './logger.js'
+import { importStorage, overrideWasm } from './utils/import-storage.js'
+import { openDb } from './db/index.js'
+import { timeTravel } from './utils/time-travel.js'
 
 export const setup = async (argv: Config, runBlock = false) => {
   let provider: ProviderInterface

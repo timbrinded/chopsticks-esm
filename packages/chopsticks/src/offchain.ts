@@ -1,7 +1,7 @@
-import { Block } from './blockchain/block'
+import { Block } from './blockchain/block.js'
 import { HexString } from '@polkadot/util/types'
 import { blake2AsHex } from '@polkadot/util-crypto'
-import { logger } from './rpc/shared'
+import { logger } from './rpc/shared.js'
 import { queueScheduler } from 'rxjs'
 
 export class OffchainWorker {

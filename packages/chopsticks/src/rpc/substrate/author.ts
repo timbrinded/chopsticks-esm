@@ -1,8 +1,8 @@
-import { APPLY_EXTRINSIC_ERROR } from '../../blockchain/txpool'
-import { Block } from '../../blockchain/block'
-import { Handlers, ResponseError } from '../shared'
+import { APPLY_EXTRINSIC_ERROR } from '../../blockchain/txpool.js'
+import { Block } from '../../blockchain/block.js'
+import { Handlers, ResponseError } from '../shared.js'
 import { TransactionValidityError } from '@polkadot/types/interfaces'
-import { defaultLogger } from '../../logger'
+import { defaultLogger } from '../../logger.js'
 
 const logger = defaultLogger.child({ name: 'rpc-author' })
 

@@ -1,4 +1,4 @@
-import { Handlers, ResponseError } from '../shared'
+import { Handlers, ResponseError } from '../shared.js'
 import { hexToU8a } from '@polkadot/util'
 
 const handlers: Handlers = {

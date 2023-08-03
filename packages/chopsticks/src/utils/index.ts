@@ -2,7 +2,7 @@ import { HexString } from '@polkadot/util/types'
 import { StorageKey } from '@polkadot/types'
 import { compactStripLength, hexToU8a, u8aToHex } from '@polkadot/util'
 
-import { Blockchain } from '../blockchain'
+import { Blockchain } from '../blockchain/index.js'
 
 export type GetKeys = (startKey?: string) => Promise<StorageKey<any>[]>
 

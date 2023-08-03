@@ -1,5 +1,5 @@
-import { Handler, ResponseError } from '../../rpc/shared'
-import { timeTravel } from '../../utils/time-travel'
+import { Handler, ResponseError } from '../../rpc/shared.js'
+import { timeTravel } from '../../utils/time-travel.js'
 
 export const rpc: Handler = async (context, [date]) => {
   const timestamp = typeof date === 'string' ? Date.parse(date) : date

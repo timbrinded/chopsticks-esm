@@ -1,7 +1,6 @@
 import WebSocket, { AddressInfo, WebSocketServer } from 'ws'
-
-import { ResponseError, SubscriptionManager } from './rpc/shared'
-import { defaultLogger, truncate } from './logger'
+import { ResponseError, SubscriptionManager } from './rpc/shared.js'
+import { defaultLogger, truncate } from './logger.js'
 
 const logger = defaultLogger.child({ name: 'ws' })
 

@@ -1,13 +1,13 @@
-import { EventEmitter } from 'node:stream'
+import { EventEmitter } from 'node:events'
 import { GenericExtrinsic } from '@polkadot/types'
 import { HexString } from '@polkadot/util/types'
-import _ from 'lodash'
+import _ from 'lodash-es'
 
-import { Blockchain } from '.'
-import { Deferred, defer } from '../utils'
-import { InherentProvider } from './inherent'
-import { buildBlock } from './block-builder'
-import { defaultLogger, truncate } from '../logger'
+import { Blockchain } from './index.js'
+import { Deferred, defer } from '../utils/index.js'
+import { InherentProvider } from './inherent/index.js'
+import { buildBlock } from './block-builder.js'
+import { defaultLogger, truncate } from '../logger.js'
 
 const logger = defaultLogger.child({ name: 'txpool' })
 

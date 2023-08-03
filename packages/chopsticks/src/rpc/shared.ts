@@ -1,5 +1,5 @@
-import { Blockchain } from '../blockchain'
-import { defaultLogger } from '../logger'
+import { Blockchain } from '../blockchain/index.js'
+import { defaultLogger } from '../logger.js'
 
 export const logger = defaultLogger.child({ name: 'rpc' })
 

@@ -1,6 +1,6 @@
-import { BuildBlockMode } from '../../blockchain/txpool'
-import { Handler, ResponseError } from '../../rpc/shared'
-import { defaultLogger } from '../../logger'
+import { BuildBlockMode } from '../../blockchain/txpool.js'
+import { Handler, ResponseError } from '../../rpc/shared.js'
+import { defaultLogger } from '../../logger.js'
 
 export const rpc: Handler = async (context, [mode]) => {
   defaultLogger.debug({ mode }, 'dev_setBlockBuildMode')

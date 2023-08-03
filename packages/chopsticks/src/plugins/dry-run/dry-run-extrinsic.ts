@@ -1,11 +1,11 @@
 import { blake2AsHex } from '@polkadot/util-crypto'
 import { writeFileSync } from 'node:fs'
 
-import { Config } from '../../schema'
-import { defaultLogger } from '../../logger'
-import { generateHtmlDiffPreviewFile } from '../../utils/generate-html-diff'
-import { openHtml } from '../../utils/open-html'
-import { setup } from '../../setup'
+import { Config } from '../../schema/index.js'
+import { defaultLogger } from '../../logger.js'
+import { generateHtmlDiffPreviewFile } from '../../utils/generate-html-diff.js'
+import { openHtml } from '../../utils/open-html.js'
+import { setup } from '../../setup.js'
 
 export const dryRunExtrinsic = async (argv: Config) => {
   const context = await setup(argv)

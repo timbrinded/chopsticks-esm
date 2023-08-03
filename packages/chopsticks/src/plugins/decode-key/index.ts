@@ -1,8 +1,8 @@
-import { Config } from '../..'
+import { Config } from '../../index.js'
 import { HexString } from '@polkadot/util/types'
-import { decodeKey } from '../../utils/decoder'
-import { defaultOptions } from '../../cli-options'
-import { setup } from '../../setup'
+import { decodeKey } from '../../utils/decoder.js'
+import { defaultOptions } from '../../cli-options.js'
+import { setup } from '../../setup.js'
 import type yargs from 'yargs'
 
 export const cli = (y: yargs.Argv) => {

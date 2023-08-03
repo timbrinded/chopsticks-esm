@@ -1,6 +1,6 @@
-import { Context, Handlers, ResponseError, SubscriptionManager, logger } from './shared'
-import { pluginHandlers } from '../plugins'
-import substrate from './substrate'
+import { Context, Handlers, ResponseError, SubscriptionManager, logger } from './shared.js'
+import { pluginHandlers } from '../plugins/index.js'
+import substrate from './substrate/index.js'
 
 const allHandlers: Handlers = {
   ...substrate,

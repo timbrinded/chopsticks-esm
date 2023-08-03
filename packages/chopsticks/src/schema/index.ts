@@ -1,13 +1,13 @@
 import { basename, extname } from 'node:path'
 import { readFileSync } from 'node:fs'
 import { z } from 'zod'
-import _ from 'lodash'
+import _ from 'lodash-es'
 import axios from 'axios'
 import yaml from 'js-yaml'
 
-import { BuildBlockMode } from '../blockchain/txpool'
-import { isUrl } from '../utils'
-import { logger } from '../rpc/shared'
+import { BuildBlockMode } from '../blockchain/txpool.js'
+import { isUrl } from '../utils/index.js'
+import { logger } from '../rpc/shared.js'
 
 export const genesisSchema = z.object({
   id: z.string(),

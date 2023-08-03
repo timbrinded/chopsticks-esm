@@ -1,15 +1,14 @@
 import type yargs from 'yargs'
 
 import { HexString } from '@polkadot/util/types'
-import { defaultOptions, mockOptions } from '../../cli-options'
+import { defaultOptions, mockOptions } from '../../cli-options.js'
 import { writeFileSync } from 'node:fs'
-
-import { Config } from '../../schema'
-import { defaultLogger } from '../../logger'
-import { generateHtmlDiffPreviewFile } from '../../utils/generate-html-diff'
-import { openHtml } from '../../utils/open-html'
-import { runTask, taskHandler } from '../../executor'
-import { setup } from '../../setup'
+import { Config } from '../../schema/index.js'
+import { defaultLogger } from '../../logger.js'
+import { generateHtmlDiffPreviewFile } from '../../utils/generate-html-diff.js'
+import { openHtml } from '../../utils/open-html.js'
+import { runTask, taskHandler } from '../../executor.js'
+import { setup } from '../../setup.js'
 
 export const cli = (y: yargs.Argv) => {
   y.command(

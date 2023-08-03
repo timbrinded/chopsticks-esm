@@ -1,8 +1,8 @@
-import { Config } from './schema'
-import { createServer } from './server'
-import { handler } from './rpc'
-import { logger } from './rpc/shared'
-import { setup } from './setup'
+import { Config } from './schema/index.js'
+import { createServer } from './server.js'
+import { handler } from './rpc/index.js'
+import { logger } from './rpc/shared.js'
+import { setup } from './setup.js'
 
 export const setupWithServer = async (argv: Config) => {
   const context = await setup(argv)

@@ -1,5 +1,5 @@
-import { Block } from '../../blockchain/block'
-import { Handler, ResponseError } from '../../rpc/shared'
+import { Block } from '../../blockchain/block.js'
+import { Handler, ResponseError } from '../../rpc/shared.js'
 
 export const rpc: Handler = async (context, [hashOrNumber]) => {
   let block: Block | undefined

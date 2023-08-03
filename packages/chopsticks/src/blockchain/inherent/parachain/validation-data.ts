@@ -2,7 +2,7 @@ import { AbridgedHrmpChannel, HrmpChannelId } from '@polkadot/types/interfaces'
 import { GenericExtrinsic } from '@polkadot/types'
 import { HexString } from '@polkadot/util/types'
 import { hexToU8a, u8aConcat } from '@polkadot/util'
-import _ from 'lodash'
+import _ from 'lodash-es'
 
 import { Block } from '../../block'
 import { BuildBlockParams, DownwardMessage, HorizontalMessage } from '../../txpool'

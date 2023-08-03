@@ -1,12 +1,11 @@
 import { config as dotenvConfig } from 'dotenv'
 import { hideBin } from 'yargs/helpers'
-import _ from 'lodash'
+import _ from 'lodash-es'
 import yargs from 'yargs'
-
-import { Blockchain, BuildBlockMode, connectParachains, connectVertical, setupWithServer } from '.'
-import { Config, fetchConfig } from './schema'
-import { defaultOptions, mockOptions } from './cli-options'
-import { pluginExtendCli } from './plugins'
+import { Blockchain , BuildBlockMode, connectParachains, connectVertical, setupWithServer} from './index.js'
+import { Config, fetchConfig } from './schema/index.js'
+import { defaultOptions, mockOptions } from './cli-options.js'
+import { pluginExtendCli } from './plugins/index.js'
 
 dotenvConfig()
 

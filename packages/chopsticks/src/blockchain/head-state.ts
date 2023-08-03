@@ -1,8 +1,8 @@
 import { stringToHex } from '@polkadot/util'
-import _ from 'lodash'
+import _ from 'lodash-es'
 
-import { Block } from './block'
-import { defaultLogger } from '../logger'
+import { Block } from './block.js'
+import { defaultLogger } from '../logger.js'
 
 type Callback = (block: Block, pairs: [string, string][]) => void | Promise<void>
 
