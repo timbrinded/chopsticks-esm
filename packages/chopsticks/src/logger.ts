@@ -1,8 +1,9 @@
-import {createRequire} from "module"
-const Require = createRequire(import.meta.url)
-const createLogger = Require('pino')
+// import {createRequire} from "module"
+// const Require = createRequire(import.meta.url)
+// const createLogger = Require('pino')
+import { default as Pino } from 'pino';
 
-export const defaultLogger = createLogger({
+export const defaultLogger = Pino({
   level: process.env.LOG_LEVEL || 'info',
   transport: {
     target: 'pino-pretty',
