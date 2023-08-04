@@ -18,10 +18,8 @@
 		"baseUrl": ".",
 		"composite": true,
 		"paths": {
-			"@acala-network/chopsticks": ["packages/chopsticks/src"],
-			"@acala-network/chopsticks/*": ["packages/chopsticks/src/*"],
-			"@acala-network/chopsticks-testing": ["packages/testing/src"],
-			"@acala-network/chopsticks-testing/*": ["packages/testing/src/*"]
+			"chopsticks-esm": ["packages/chopsticks/src"],
+			"chopsticks/*": ["packages/chopsticks/src/*"],
 		}
 	}
 }

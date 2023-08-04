@@ -1,4 +1,4 @@
-import { bootstrap } from 'global-agent'
+import { bootstrap } from 'global-agent-ts'
 
 globalThis.GLOBAL_AGENT = {};
 
