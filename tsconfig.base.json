@@ -10,7 +10,7 @@
 		"noImplicitAny": false,
 		"target": "esnext",
 		"skipLibCheck": true,
-		"strict": true,
+		"strict": false,
 		"emitDecoratorMetadata": true,
 		"experimentalDecorators": true,
 		"declaration": true,

@@ -2,12 +2,12 @@ import { Column, Entity, PrimaryColumn } from 'typeorm'
 
 @Entity()
 export class KeyValuePair {
-  @PrimaryColumn()
+  @PrimaryColumn("text")
   blockHash!: string
 
-  @PrimaryColumn()
+  @PrimaryColumn("text")
   key!: string
 
-  @Column({ nullable: true })
+  @Column("text",{ nullable: true })
   value!: string
 }
